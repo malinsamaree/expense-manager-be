@@ -1,0 +1,45 @@
+PUT http://localhost:8081/expense-manager/rename-paying-account
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyZTVhNjM1M2M0OTZkZmVjYTAzMzM4MiIsImlhdCI6MTY1OTg4MDIyMywiZXhwIjoxNjU5ODgzODIzfQ.mk-s4R1e-uHvzncpjBK07JE3nNjFcedr6IdpNgLlgpM
+Content-Type: application/json
+
+{
+  "currentName": "Bar",
+  "newName": "Cash"
+}
+
+###
+PUT http://localhost:8081/expense-manager/set-paying-account-default
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyZTVhNjM1M2M0OTZkZmVjYTAzMzM4MiIsImlhdCI6MTY1OTg4MDIyMywiZXhwIjoxNjU5ODgzODIzfQ.mk-s4R1e-uHvzncpjBK07JE3nNjFcedr6IdpNgLlgpM
+Content-Type: application/json
+
+{
+  "name": "Cash"
+}
+
+###
+
+
+###
+POST http://localhost:8081/expense-manager/create-paying-account
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyZTVhNjM1M2M0OTZkZmVjYTAzMzM4MiIsImlhdCI6MTY1OTg3MDMzNiwiZXhwIjoxNjU5ODczOTM2fQ.DD3T9Amo7E7L4OFnsfla9MFBXDo9XZ-zRPAwp6nF-MQ
+Content-Type: application/json
+
+{
+  "name": "Joint account"
+}
+
+###
+GET http://localhost:8081/expense-manager/get-all
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyZTVhNjM1M2M0OTZkZmVjYTAzMzM4MiIsImlhdCI6MTY1OTg3NDQ4NiwiZXhwIjoxNjU5ODc4MDg2fQ.TsgywL7Tn2TslMe1dcgdHmXIpr0N8ZfWJvbP_Tjq4ug
+
+Accept: application/json
+
+###
+GET http://localhost:8081/expense-manager/asdasd
+Accept: application/json
+
+###
+GET http://localhost:8081/expense-manager
+Accept: application/json
+
+###
